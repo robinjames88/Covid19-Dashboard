@@ -6,7 +6,7 @@ $(document).ready(function() {
     var userdata = $("#city").val(); // collecting the user input for the city entered
     // ajax call for url api
     $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/weather?q=" + userdata + "&appid=ed082eafda2fc492fedc0704cbd63729&units=metric",
+      url: "http://api.openweathermap.org/data/2.5/weather?q=" + userdata + "&appid=",
       type: "GET", // the get request
       dataType: "jsonp",
       success: function(data) { //success callback function
